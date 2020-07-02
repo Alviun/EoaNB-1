@@ -40,6 +40,22 @@
         #NATIONAL SPIRITS
 
   }
+  
+  SWE = {
+  if = {
+    limit = {
+      has_dlc = "Together for Victory"
+    }
+    set_autonomy = {
+      target = NOR 
+      autonomous_state = autonomy_puppet
+      freedom_level = 0.2
+    }
+  else = {
+    puppet = NOR
+  }
+  }
+}
 
 
   set_politics = {
@@ -71,6 +87,8 @@ set_popularities = {
 	tribal_artisan=1
 	tribal_chemistry=1
 	tribal_guilds_trade=1
+	tribal_crop_planting=1
+	tribal_irrigation=1
 	tribal_crop_rotation=1
 	tribal_salted_smoked_goods=1
 	tribal_leching=1
